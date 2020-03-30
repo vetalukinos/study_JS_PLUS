@@ -26,12 +26,14 @@ switch (lang) {
 }
 
 /*MULTIDIMENSIONAL ARRAY*/
-lang = prompt("введите ru или en")
+lang = prompt("введите ru или en");
 let arr = {
     'ru':['пн', 'вт', 'ср','чт', 'пт', 'сб', 'вс'],
     'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
 };
 alert(arr[lang]);
+
+
 
 
 
