@@ -1,18 +1,46 @@
+'use strict';
 
-let num = 266219;
+/*First Task*/
+let lang = 'ru';
 
-let str = num.toString().split('');
-
-let multiplication = 1;
-for (let i = 0; i < str.length; i++) {
-    multiplication *= str[i];
+/*IF*/
+if (lang === 'ru') {
+    console.log('Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресеье');
+} else if (lang === 'en') {
+    console.log('Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday');
+} else {
+    console.log('Нет совпадений');
 }
-console.log(multiplication);
 
-let degreeOf = multiplication ** 3;
 
-console.log(degreeOf.toString().slice(0,2));
+/*SWITCH CASE*/
+switch (lang) {
+    case 'ru':
+        console.log('Понедельник, Вторник, Среда, Четверг, Пятница, Суббота, Воскресеье');
+        break;
+        case "en":
+            console.log('Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday');
+            break;
+    default:
+        console.log('Нет совпадений');
+}
 
+/*MULTIDIMENSIONAL ARRAY*/
+lang = prompt("введите ru или en")
+let arr = {
+    'ru':['пн', 'вт', 'ср','чт', 'пт', 'сб', 'вс'],
+    'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
+};
+alert(arr[lang]);
+
+
+
+
+/*Second Task*/
+let namePerson = 'Дженнифер Энистон';
+
+let result = namePerson === 'Артем' ? 'директор' : namePerson === 'Максим' ? 'преподаватель' : 'студент';
+console.log(result);
 
 
 
