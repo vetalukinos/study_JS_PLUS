@@ -1,17 +1,38 @@
 'use strict';
 
-/*Lesson 04*/
+let week = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
+    toDay = new Date().getDay() - 1;
 
-const foo = function(a) {
-    if (typeof a !== 'string') {
-        alert('В качестве аргумента передана не строка');
-    } else if (a.length > 30) {
-        let str = a.slice(0, 29) + '...';
-        console.log(str.trim())
+week.forEach(function(item, i) {
+    if (i === toDay) {
+        document.write('<b>' + week[i] + '</b></br>');
+    } else if (week[i] === 'Суббота' || week[i] === 'Воскресенье') {
+        document.write('<i>' + week[i] + '</i></br>');
+    } else {
+        document.write(week[i] + '</br>');
     }
-};
+});
 
-foo(' Если строка более 30 знаков - то после 30го символа часть текста скрывается и вместо них появляются три точки         ');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
