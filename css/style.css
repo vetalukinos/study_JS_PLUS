@@ -1,0 +1,19 @@
+body {
+    background-color: darkturquoise;
+}
+#color {
+    text-align: center;
+    color: #fff;
+}
+#change {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 40px;
+    color: green;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid green;
+    cursor: pointer;
+    outline: none;
+}
